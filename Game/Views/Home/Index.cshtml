@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="~/css/style.css">
+</head>
+<body>
+    <div>
+        <h3>Who wants to be a rich guy?</h3>
+        <table>
+            <tr>
+                <td><p>Question</p></td>
+                <td><p>Option 1</p></td>
+                <td><p>Option 2</p></td>
+                <td><p>Option 3</p></td>
+                <td><p>Option 4</p></td>
+                <td></td>
+            </tr>
+            @foreach (var b in ViewBag.Questions)
+            {
+                <tr>
+                    <td><p>@b.question</p></td>
+                    <td><p>@b.option1</p></td>
+                    <td><p>@b.option2</p></td>
+                    <td><p>@b.option3</p></td>
+                    <td><p>@b.option4</p></td>
+                    <td><p><a href="https://s1.1zoom.ru/big7/939/Men_Money_Many_Dollars_Banknotes_Smile_529854_1920x1336.jpg">Give me money!</a></p></td>
+                </tr>
+            }
+        </table>
+
+        
+    </div>
+</body>
+</html>
